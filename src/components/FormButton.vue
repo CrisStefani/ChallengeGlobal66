@@ -1,7 +1,7 @@
 <template>
   
     <router-link class="btn-normal" to="/search"><p class="text-3">Get started</p></router-link>
-      <p class="text-3">Get started</p>
+      
   
   
 </template>

@@ -1,8 +1,12 @@
 <template>
     <form action="">
         <div class="search-bar">
+            <div>
         <img class="image" src="../assets/search.png" alt="">
-        <div class="text-4">Search</div>
+        </div>
+        <div class="text-4">
+           <input type="text"  placeholder="Search"> 
+            </div>
         </div>
     </form>
 </template>
@@ -20,12 +24,20 @@ export default {
     border-radius: 5px;
     box-shadow: 0px 2px 10px #0000000a;
     display: flex;
-    height: 50px;
+    height: 35px;
     overflow: hidden;
     padding: 0 15px;
+    padding-top: 1%;
     width: 570px;
     margin-left: 20%;
     margin-top: 5%;
+    flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: auto;
+  align-content: start;
+  
+
 }
 .text-4{
    color: #bfbfbf;
@@ -40,5 +52,8 @@ export default {
 .image{
     height: 18px;
     width: 18px;
+}
+input{
+    border:0;
 }
 </style>
