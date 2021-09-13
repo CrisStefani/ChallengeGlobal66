@@ -5,15 +5,20 @@
         <img class="image" src="../assets/search.png" alt="">
         </div>
         <div class="text-4">
-           <input type="text"  placeholder="Search"> 
+           <input v-model="search" type="text"  placeholder="Search" v-on:keyup.enter="searchdata"> 
             </div>
         </div>
+        
     </form>
 </template>
 
 <script>
+
+
 export default {
-    name: 'SearchBar'
+    name: 'SearchBar',
+    
+    
 }
 </script>
 

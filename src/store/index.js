@@ -2,7 +2,8 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    pokemons: []
+    pokemons: [],
+    
     
   },
   mutations: {
@@ -10,6 +11,7 @@ export default createStore({
       state.pokemons = payload
       console.log(state.pokemons) 
     }
+   
   },
   actions: {
     async fetchData({commit}){
@@ -21,6 +23,7 @@ export default createStore({
         console.log(error)
       }
     }
+    
   },
   modules: {
   }

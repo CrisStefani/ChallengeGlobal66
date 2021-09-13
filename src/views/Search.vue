@@ -52,7 +52,7 @@
 import {useStore} from  'vuex'
 import SearchBar from '../components/SearchBar.vue'
 import AllButton from '../components/AllButton.vue';
-import axios from 'axios'
+
 import { computed, onMounted } from 'vue'
 
 
@@ -64,11 +64,13 @@ export default {
     return{
       pokemonList: null,
       showModal: false,
-      
+     
          
     }
     
   },
+
+  
   components: {
     SearchBar,
     AllButton
@@ -81,9 +83,8 @@ export default {
     })
     const pokemons = computed(() => store.state.pokemons) 
   return {pokemons}
-  },
+  }
   
-
 }
 
 </script>
